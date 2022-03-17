@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&display=swap");
+
+/* default css start here*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+a {
+  color: #f35241;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+a :hover {
+  color: #ffdf20;
+}
+/* default css end here*/
+
+/* bottom to top scroll button css here  */
+#scrollTop {
+  position: fixed;
+  background: #f30b65;
+  color: #ffdf20;
+  font-size: 22px;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 999;
+}
+#scrollTop:active {
+  background: #f35241;
+}

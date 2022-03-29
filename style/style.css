@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&display=swap");
+
+/* default css start here*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+a {
+  color: #555;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+a :hover {
+  color: #000;
+}
+/* default css end here*/
+
+/* navBar css start  */
+#NavBar {
+  background: #ff5200;
+}
+.sticky {
+  background: #ff5200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#NavBar button {
+  border: 1px solid #fff;
+  outline: none !important;
+  transition: 0.8s ease;
+}
+#NavBar button span i {
+  color: #fff;
+  transition: 0.8s ease;
+}
+#NavBar button:hover {
+  border: 1px solid #000;
+}
+#NavBar button span:hover i {
+  color: #000;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navIcon {
+  color: #fff !important;
+}
+.logo {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: 0.5s ease;
+}
+.menu-aria {
+  justify-content: end !important;
+}
+.menu-wapper {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.menu-wapper li a {
+  color: #fff !important;
+  transition: 0.8s ease;
+}
+.menu-wapper li a:hover {
+  color: #000 !important;
+}

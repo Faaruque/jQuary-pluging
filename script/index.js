@@ -1,24 +1,18 @@
-// smoothscroll js Not
-var scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 100,
-  speedAsDuration: true,
-});
+$(document).ready(function () {
+  $(window).scroll(function () {
+    // scroll-up button show/hide script
+    if (this.scrollY > 500) {
+      $(".scroll-up").addClass("show");
+    } else {
+      $(".scroll-up").removeClass("show");
+    }
+  });
 
-// bottom to top scroll javaScript here
-const scrollTop = document.getElementById("scrollTop");
-window.addEventListener("scroll", scrollFuncton);
-function scrollFuncton() {
-  if (window.pageYOffset > 300) {
-    scrollTop.style.display = "block";
-  } else {
-    scrollTop.style.display = "none";
-  }
-}
-scrollTop.addEventListener("click", function () {
-  window.scrollTo(0, 0);
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
+  // slide-up script
+  $(".scroll-up").click(function () {
+    $("html").animate({ scrollTop: 0 });
+
+    // removing smooth scroll on slide-up button click
+    $("html").css("scrollBehavior", "auto");
   });
 });
